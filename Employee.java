@@ -4,10 +4,10 @@ public class Employee {
     private String emp_Number;
 
     //constructor
-    public Employee(){
-        fName = "John";
-        lName = "Doe";
-        emp_Number = "0000000";
+    public Employee(String fName, String lName, String emp_Number){
+        this.fName = fName;
+        this.lName = lName;
+        this.emp_Number = emp_Number;
     }
 
 
@@ -35,5 +35,14 @@ public class Employee {
 
     public void setEmpID(String emp_Number) {
         this.emp_Number = emp_Number;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "fname='" + fName + '\'' +
+                ", lname='" + lName + '\'' +
+                ", empID=" + emp_Number +
+                '}';
     }
 }
