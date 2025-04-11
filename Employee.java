@@ -1,48 +1,112 @@
 public class Employee {
-    private String fName;
-    private String lName;
-    private String emp_Number;
-
+    private int id;
+    private String name;
+    private String department;
+    private String position;
+    private double salary;
+    private String email;
+    private String phoneNumber;
+    private String address;
+    private String hireDate;
+    
     //constructor
-    public Employee(String fName, String lName, String emp_Number){
-        this.fName = fName;
-        this.lName = lName;
-        this.emp_Number = emp_Number;
+    // Updated constructor
+    public Employee(int id, String name, String department, String position, double salary, String email, String phoneNumber, String address, String hireDate) {
+        this.id = id;
+        this.name = name;
+        this.department = department;
+        this.position = position;
+        this.salary = salary;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.hireDate = hireDate;
     }
 
 
     //getters
-    public String getFName() {
-        return fName;
+    public int getId() {
+        return id;
+    }
+    
+    public String getName() {
+        return name;
     }
 
-    public String getLName() {
-        return lName;
+    public String getDepartment() {
+        return department;
     }
 
-    public String getEmpID() {
-        return emp_Number;
+    public String getPosition() {
+        return position;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getHireDate() {
+        return hireDate;
     }
 
     //setters
-    public void setFName(String fName) {
-        this.fName = fName;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setLName(String lName) {
-        this.lName = lName;
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
-    public void setEmpID(String emp_Number) {
-        this.emp_Number = emp_Number;
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+    
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setHireDate(String hireDate) {
+        this.hireDate = hireDate;
     }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "fname='" + fName + '\'' +
-                ", lname='" + lName + '\'' +
-                ", empID=" + emp_Number +
+                "department='" + department + '\'' +
+                ", position='" + position + '\'' +
+                ", salary=" + salary +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", hireDate='" + hireDate + '\'' +
                 '}';
     }
 }
